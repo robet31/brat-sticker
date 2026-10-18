@@ -1,0 +1,12 @@
+{
+  "name": "raffi-connect",
+  "description": "Link-in-bio + promo landing page (dark minimal) for QR business card. LinkedIn, Instagram, WhatsApp auto-chat, Gemini promo.",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.1"
+  }
+}

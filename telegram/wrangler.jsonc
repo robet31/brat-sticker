@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "brat-bot",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "observability": { "enabled": true },
+  "rules": [
+    { "type": "CompiledWasm", "globs": ["**/*.wasm"] }
+  ],
+  "kv_namespaces": [
+    { "binding": "BRAT", "id": "8a66ddd9488b4201b7e7f04faee24cc3" }
+  ]
+}

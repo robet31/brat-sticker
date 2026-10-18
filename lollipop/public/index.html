@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ar'raffi — Links</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a0a0a;--card:#131313;--border:rgba(255,255,255,.09);--text:#fafafa;--muted:#a1a1aa;--acc:#38bdf8}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased}
+#stars{position:fixed;inset:0;z-index:0;opacity:.7}
+.wrap{position:relative;z-index:1;max-width:600px;margin:0 auto;padding:48px 20px 64px}
+.profile{text-align:center}
+.avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.2)}
+.avatar-fb{width:112px;height:112px;border-radius:50%;background:linear-gradient(135deg,#1e293b,#0f172a);display:inline-flex;align-items:center;justify-content:center;font-size:54px;border:2px solid rgba(255,255,255,.2)}
+h1{font-size:20px;font-weight:500;margin-top:16px;letter-spacing:-.01em}
+.role{font-size:14px;font-weight:500;color:var(--muted);margin-top:4px}
+.loc{font-size:14px;color:var(--muted);margin-top:2px}
+.badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:12px;font-weight:600;border:1px solid var(--border);background:var(--card);border-radius:9999px;padding:6px 14px;color:var(--text)}
+.badge .dot{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 8px #4ade80}
+.socials{display:flex;gap:10px;justify-content:center;margin-top:18px}
+.socials a{width:42px;height:42px;border-radius:12px;background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:transform .15s,border-color .15s}
+.socials a:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.3)}
+.sec{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:32px 0 12px}
+.links{display:grid;gap:10px}
+.card-link{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--text);transition:transform .15s,border-color .15s,background .15s}
+.card-link:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.25);background:#1a1a1a}
+.card-link .ico{width:44px;height:44px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:22px;overflow:hidden}
+.card-link .tx b{display:block;font-size:16px;font-weight:400}
+.card-link .tx small{display:block;font-size:14px;font-weight:500;color:var(--muted);margin-top:1px;word-break:break-all}
+.card-link .arr{margin-left:auto;color:var(--muted);font-size:20px}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:420px){.prices{grid-template-columns:1fr}}
+.price{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px}
+.price h3{font-size:16px;font-weight:400}
+.price .rp{font-size:20px;font-weight:700;margin:8px 0 4px}
+.price .rp small{font-size:12px;color:var(--muted);font-weight:500}
+.price ul{list-style:none;margin-top:10px;display:grid;gap:7px;font-size:14px;font-weight:500;color:var(--text)}
+.price li{display:flex;gap:8px;align-items:flex-start}
+.price li i{font-style:normal;color:#4ade80;font-weight:700}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;background:#fafafa;color:#111;border-radius:12px;padding:14px;font-weight:700;font-size:14px;text-decoration:none;margin-top:12px;transition:transform .15s}
+.cta:hover{transform:translateY(-2px)}
+.cta small{font-weight:500;color:#52525b}
+.touch{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;text-align:center}
+.touch p{font-size:14px;color:var(--muted);margin-top:6px}
+.touch h2{font-size:16px;font-weight:400}
+footer{text-align:center;margin-top:40px;font-size:12px;color:var(--muted);font-family:ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-reduced-motion:reduce){#stars{display:none}}
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<div class="wrap">
+
+  <div class="profile">
+    <div id="avatarWrap"><img class="avatar" src="avatar.jpg" alt="Ar'raffi" onerror="this.outerHTML='<div class=\'avatar-fb\'>🤖</div>'"></div>
+    <h1 id="name">Ar'raffi Abqori Nur Azizi</h1>
+    <div class="role">Tech • AI • Productivity • Memes</div>
+    <div class="loc">Indonesia 🇮🇩</div>
+    <div><span class="badge"><span class="dot"></span> Open to chat</span></div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/arraffi-abqori-nur-azizi/" target="_blank" rel="noopener" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fafafa"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></a>
+      <a href="https://www.instagram.com/ravnxx_/" target="_blank" rel="noopener" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fafafa" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="#fafafa" stroke="none"/></svg></a>
+      <a id="socWa" href="https://wa.me/6281515450611?text=Permisi%20kak%20Rapii%2C%20aku%20mau%20tanya%20terkait%20promo%20Gemininya%2C%20apakah%20masih%20ada%3F%20Untuk%20harganya%20berapa%20ya%3F" target="_blank" rel="noopener" title="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fafafa"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.3.2.5.1.7-.1l.8-.9c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3 0 .2 0 .7-.2 1.1z"/></svg></a>
+    </div>
+  </div>
+
+  <div class="sec">Links</div>
+  <div class="links" id="links">
+    <a class="card-link" href="https://www.linkedin.com/in/arraffi-abqori-nur-azizi/" target="_blank" rel="noopener"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></span><span class="tx"><b>LinkedIn</b><small>Professional profile & networking</small></span><span class="arr">›</span></a>
+    <a class="card-link" href="https://www.instagram.com/ravnxx_/" target="_blank" rel="noopener"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="#D62976"/><circle cx="12" cy="12" r="4" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.4" fill="#fff"/></svg></span><span class="tx"><b>Instagram</b><small>@ravnxx_</small></span><span class="arr">›</span></a>
+    <a class="card-link" href="https://wa.me/6281515450611?text=Permisi%20kak%20Rapii%2C%20aku%20mau%20tanya%20terkait%20promo%20Gemininya%2C%20apakah%20masih%20ada%3F%20Untuk%20harganya%20berapa%20ya%3F" target="_blank" rel="noopener"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#16A34A"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.3.2.5.1.7-.1l.8-.9c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3 0 .2 0 .7-.2 1.1z"/></svg></span><span class="tx"><b>WhatsApp</b><small>0815-1545-0611</small></span><span class="arr">›</span></a>
+    <a class="card-link" href="#promo"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#7C3AED"><path d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z"/></svg></span><span class="tx"><b>Google AI / Gemini</b><small>Paket hemat & aktivasi langsung</small></span><span class="arr">›</span></a>
+    <a class="card-link" href="https://app.notion.com/p/Tutorial-Aktivasi-Gemini-Pro-AI-Plan-3-Bulan-Cara-Berhenti-Berlangganan-31678feadf3d802f9800ce73bdd22a7f" target="_blank" rel="noopener"><span class="ico">📖</span><span class="tx"><b>Tutorial Aktivasi</b><small>Cara aktivasi Gemini Pro 3 Bulan</small></span><span class="arr">›</span></a>
+  </div>
+
+  <div class="sec" id="promo">Google AI / Gemini Promo</div>
+  <div class="prices">
+    <div class="price"><h3>3 Bulan</h3><div class="rp" id="harga3">Rp 30.000</div><ul id="list3"><li><i>✓</i>Google AI Pro</li><li><i>✓</i>Google Colab Pro+</li><li><i>✓</i>Free 5 TB Storage</li><li><i>✓</i>Aktivasi di akun sendiri</li></ul></div>
+    <div class="price"><h3>18 Bulan</h3><div class="rp" id="harga18">Rp 50.000</div><ul id="list18"><li><i>✓</i>Google AI Pro</li><li><i>✓</i>Google Colab Pro+</li><li><i>✓</i>Free 5 TB Storage</li><li><i>✓</i>Aktivasi di akun sendiri</li></ul></div>
+  </div>
+
+  <div class="sec">Get in Touch</div>
+  <div class="touch">
+    <h2>Minat? Chat aja! 💬</h2>
+    <p>Fast respon • bisa tanya-tanya dulu soal promo Gemini</p>
+    <a class="cta" id="waBtn" href="https://wa.me/6281515450611?text=Permisi%20kak%20Rapii%2C%20aku%20mau%20tanya%20terkait%20promo%20Gemininya%2C%20apakah%20masih%20ada%3F%20Untuk%20harganya%20berapa%20ya%3F" target="_blank" rel="noopener">Chat WhatsApp — 0815-1545-0611</a>
+  </div>
+
+  <footer>COPYRIGHT © 2026 AR'RAFFI • GOOD IDEAS BETTER EXECUTION</footer>
+</div>
+
+<script>
+// Starfield halus (rani, cocok tema gelap)
+(function(){
+  var c=document.getElementById('stars'),x=c.getContext('2d'),S=[],W,H;
+  function rs(){W=c.width=innerWidth;H=c.height=innerHeight}
+  rs();addEventListener('resize',rs);
+  for(var i=0;i<110;i++)S.push({x:Math.random(),y:Math.random(),r:Math.random()*1.3+.3,p:Math.random()*6.28,s:.3+Math.random()*.8});
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){x.fillStyle='#fff';S.forEach(function(s){x.globalAlpha=.5;x.beginPath();x.arc(s.x*W,s.y*H,s.r,0,6.28);x.fill();});return;}
+  (function frame(t){
+    x.clearRect(0,0,W,H);
+    for(var i=0;i<S.length;i++){var s=S[i];x.globalAlpha=.25+.45*Math.abs(Math.sin(t/1400*s.s+s.p));x.fillStyle='#fff';x.beginPath();x.arc(s.x*W,s.y*H,s.r,0,6.28);x.fill();}
+    requestAnimationFrame(frame);
+  })(0);
+})();
+
+const ICONS={
+  linkedin:'<svg width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>',
+  instagram:'<svg width="24" height="24" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="#D62976"/><circle cx="12" cy="12" r="4" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.4" fill="#fff"/></svg>',
+  whatsapp:'<svg width="24" height="24" viewBox="0 0 24 24" fill="#16A34A"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.3.2.5.1.7-.1l.8-.9c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3 0 .2 0 .7-.2 1.1z"/></svg>',
+  gemini:'<svg width="24" height="24" viewBox="0 0 24 24" fill="#7C3AED"><path d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z"/></svg>',
+  book:'📖',link:'🔗'
+};
+const WA_TEXT='Permisi kak Rapii, aku mau tanya terkait promo Gemininya, apakah masih ada? Untuk harganya berapa ya?';
+function render(d){
+  const s=Object.assign({},(d&&d.settings)||{});
+  if(s.name)document.getElementById('name').textContent=s.name;
+  if(s.avatar_url){document.getElementById('avatarWrap').innerHTML='<img class="avatar" src="'+s.avatar_url+'" alt="foto">';}
+  if(s.paket_3_harga)document.getElementById('harga3').textContent=s.paket_3_harga;
+  if(s.paket_18_harga)document.getElementById('harga18').textContent=s.paket_18_harga;
+  const wa='https://wa.me/'+String(s.wa_number||'6281515450611').replace(/[^0-9]/g,'')+'?text='+encodeURIComponent(s.wa_text||WA_TEXT);
+  document.getElementById('waBtn').href=wa;
+  document.getElementById('socWa').href=wa;
+  const L=(d&&d.links)||[];
+  if(!L.length)return;
+  const box=document.getElementById('links');box.innerHTML='';
+  L.forEach(function(l){
+    const a=document.createElement('a');a.className='card-link';
+    let url=l.url;
+    if(l.id==='whatsapp'&&!url)url=wa;
+    if(l.icon==='gemini'&&(!url||url==='#promo')){a.href='#promo';}
+    else{a.href=url||'#promo';a.target='_blank';a.rel='noopener';}
+    a.innerHTML='<span class="ico">'+(ICONS[l.icon]||ICONS.link)+'</span><span class="tx"><b>'+l.label+'</b><small>'+(l.sub||'')+'</small></span><span class="arr">›</span>';
+    box.appendChild(a);
+  });
+}
+if(window.google&&google.script&&google.script.run){
+  google.script.run.withSuccessHandler(render).withFailureHandler(function(){}).getData();
+}
+</script>
+</body>
+</html>

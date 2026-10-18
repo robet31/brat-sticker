@@ -1,0 +1,15 @@
+node_modules/
+auth/
+.env
+.wrangler/
+dist/
+*.log
+_tmp*.cjs
+_test*.png
+out-v*.png
+chk-*.png
+font-check*.png
+final-test.png
+test-render.mjs
+_r*.cjs
+_d*.cjs

@@ -1,0 +1,17 @@
+{
+  "name": "brat-whatsapp-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "@resvg/resvg-wasm": "^2.6.2",
+    "satori": "^0.12.2",
+    "qrcode-terminal": "^0.12.0",
+    "baileys": "^6.7.9",
+    "pino": "^9.5.0"
+  }
+}
