@@ -1,1 +1,1 @@
-fix: correct typo in error message - 2026-11-14
+fix: correct off-by-one on loop iteration - 2026-11-15
