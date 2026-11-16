@@ -1,1 +1,1 @@
-fix: correct off-by-one on loop iteration - 2026-11-15
+fix: resolve race condition on async - 2026-11-16
