@@ -1,1 +1,1 @@
-feat: add validation for edge case input - 2026-11-24
+fix: resolve undefined variable on session - 2026-11-28
